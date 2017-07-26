@@ -1,0 +1,9 @@
+extends layout.pug
+
+block content
+  .story
+    .home-link
+      a(href='/') Home
+    h1 #{story.title}
+    article
+      | !{story.body}
