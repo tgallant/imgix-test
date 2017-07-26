@@ -1,4 +1,4 @@
-/*global __dirname,require*/
+/*global __dirname,process,require*/
 
 'use strict'
 
@@ -52,7 +52,7 @@ router.get('/stories.html', async function (ctx) {
 app
   .use(router.routes())
   .use(router.allowedMethods())
-  .listen(3000)
+  .listen(process.env.PORT || 3000)
 
 async function getStories (limit = 6, page = 1) {
   const url = `https://content.attn.com/api/stories?limit=${limit}&page=${page}`
