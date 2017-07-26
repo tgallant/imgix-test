@@ -74,6 +74,11 @@ img {
   height: auto;
 }
 
+.content {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .resource-list {
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +95,29 @@ img {
   }
 }
 
+.resource-item__link {
+  width: 100%;
+}
+
+.resource-item__image {
+  position: relative;
+  padding-bottom: 52.6%;
+  background: linear-gradient(to bottom right, #FF5D5D,#F54985);
+}
+
+.resource-item__image img {
+  animation: fadein 0.3s;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
 .story {
   max-width: 768px;
   margin: 0 auto;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
