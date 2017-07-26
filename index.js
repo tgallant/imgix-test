@@ -64,8 +64,8 @@ async function getStories (limit = 6, page = 1) {
     item.imgix_url = client.buildURL(filePath, {
       auto: 'format',
       fit: 'crop',
-      h: 204,
-      w: 388,
+      h: 202,
+      w: 384,
       q: 60
     })
     return item
