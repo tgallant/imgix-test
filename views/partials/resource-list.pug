@@ -1,0 +1,5 @@
+each item in items
+  include resource-item.pug
+button.load-more(
+  ic-get-from=`/stories.html?limit=${limit}&page=${next}`,
+  ic-replace-target='true') Load More
